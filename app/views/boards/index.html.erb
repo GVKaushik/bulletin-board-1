@@ -33,8 +33,10 @@
 <hr>
 
 <ul>
-
+<% @list_of_boards.each do |item|%>
   <li>
+    <a href="/boards/<%=item.id%>"><%=item.name%> </a>
+    
   </li>
-
+<%end%>
 </ul>
